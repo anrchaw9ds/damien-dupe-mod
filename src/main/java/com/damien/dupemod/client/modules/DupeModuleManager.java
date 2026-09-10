@@ -10,11 +10,13 @@ public class DupeModuleManager {
     private ItemDuplicator itemDuplicator;
     private ChestDuplicator chestDuplicator;
     private CounterDisplay counterDisplay;
+    private ModuleKeybindManager keybindManager;
     
     public DupeModuleManager() {
         this.itemDuplicator = new ItemDuplicator();
         this.chestDuplicator = new ChestDuplicator();
         this.counterDisplay = new CounterDisplay();
+        this.keybindManager = new ModuleKeybindManager();
     }
     
     /**
@@ -78,5 +80,9 @@ public class DupeModuleManager {
     
     public ItemDuplicator getItemDuplicator() {
         return itemDuplicator;
+    }
+    
+    public ModuleKeybindManager getKeybindManager() {
+        return keybindManager;
     }
 }
